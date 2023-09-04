@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formulário</title>
+    <link rel="stylesheet" href="FORM.CSS">
+</head>
+
+
+<body>
+ <form action="mma.17.guilherme@gmail.com" method="post"> 
+ 
+<fieldset>
+        
+        <legend><h1>contato</h1></legend>
+    <div>
+
+<label for="nome"><h3 style="white-space:normal;">nome:
+</label> 
+<br>
+<input type="text" id="name" name="name"
+pattern="[0-9a-fa-f]{4,8}"
+title="Obrigatório"
+placeholder="Digite seu nome"required >
+<!--pattern="[0-9a-fa-f]{4,8} title="obrigatório-->
+    </div>
+
+     <div>
+<label for="email"><h3 style="white-space:normal;">email:</label>
+<br>
+<input type="email" id="email" name="email" 
+title="obrigatório"
+placeholder="Digite seu email" required> 
+    </div>
+
+    <div>
+<label for="mensagem"><h3 style="white-space:normal;"> mensagem:</label>
+<br>
+ <textarea name="mensagem" title="Fale sobre você"
+  id="mensagem" cols="25" rows="5" 
+ placeholder="Fale sobre você" required></textarea>
+
+    </div>
+
+ <div id="switch"anclick="togglemode()">
+
+        <Button style="background-color:
+         rgb(255, 0, 0);color: rgb(12, 11, 12);"> Enviar</Button>
+
+</div>
+
+    </fieldset>
+
+ </form>
+    <script src="script.js"></script>
+
+</body>
+</html>
